@@ -7,9 +7,13 @@ CSE 3142 (Compiler Design Lab)
     a) Count number of words, letters, digits and other characteristics
     b) Separates letters, digits and others characters.
 
-# Problem - 02 [code](#)
+# Problem - 02 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_02.cpp)
     Problem description:
     Write a program that read the following string: "Munmun is the student of Computer Science & Engineering".
     a) Count how many vowels and Consonants are there?
     b) Find out which vowels are consonants are existed in the above string?
     c) Divide the given string into two separate strings, where one string only contains the word started with vowel, ans another contains the words started with consonant.
+# Problem - 03 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_03.cpp)
+    Problem descrition: 
+    Write a program that abbreviates the following code:
+    CSE-3141 as Computer Science & Engineering, 3rd year, 1st Semester, Compiler Design, Theory.

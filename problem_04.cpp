@@ -3,7 +3,9 @@ using namespace std;
 
 bool isInt(string word) {
 
-    for(int i = 0; i < word.size(); i++) {
+    if(word[0] == '0') return false;
+
+    for(int i = 1; i < word.size(); i++) {
         if(!isdigit(word[i])) return false;
     }
     return true;
@@ -11,7 +13,7 @@ bool isInt(string word) {
 
 bool isVariable(string word) {
 
-    if(tolower(word[0] < 'i' and tolower(word[0]) > 'n')) return false;
+    if((tolower(word[0] < 'i' and tolower(word[0]) > 'n')) or word[0] == '0') return false;
 
     for(int i = 1; word[i]; i++) {
         if(tolower(word[i] >= 'a' and tolower(word[i]) <= 'z')) continue;
@@ -35,16 +37,16 @@ int main() {
         if(isInt(word)) {
             cout << "Short Integer." << endl;
         } else {
-            cout << "Invalid input." << endl;
+            cout << "Invalid input | not integer | Undefined" << endl;
         }
     } else if(word.size() > 4 and word.size() <= 20) {
         if(isInt(word)) {
             cout << "Long Integer." << endl;
         } else {
-            cout << "Invalid input" << endl;
+            cout << "Invalid input | not integer | Undefined" << endl;
         }
     } else {
-        cout << "Invalid input" << endl;
+        cout << "Invalid input | not integer | Undefined" << endl;
     }
 
     return 0;

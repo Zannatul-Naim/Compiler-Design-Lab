@@ -22,7 +22,15 @@ CSE 3142 (Compiler Design Lab)
     problem description:
     Write a program to build a lexical analyzer implementing the following regular expressions.
     It takes a text as input from a file (e.g. input.txt) and displays output in console mode:
-    Integet variable = (i-nI-N)(a-zA-Z0-9)*
-    ShortInt Number = (1-9)|(1-9)(0-9)|(1-9)(0-9)(0-9)|(1-9)(0-9)(0-9)(0-9)
-    LongInt Number = (1-9)(0-9)(0-9)(0-9)(0-9)+
-    Invalid Input or Undefined = otherwise
+        Integet variable = (i-nI-N)(a-zA-Z0-9)*
+        ShortInt Number = (1-9)|(1-9)(0-9)|(1-9)(0-9)(0-9)|(1-9)(0-9)(0-9)(0-9)
+        LongInt Number = (1-9)(0-9)(0-9)(0-9)(0-9)+
+        Invalid Input or Undefined = otherwise
+# Problem 05 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_05.cpp)
+    Problem description: 
+    Write a program to build a lexical analyzer implementing the following regular expressions.
+    It takes a text as input from a file (e.g. input.txt) and display output in console mode:
+        Float variable = (a-hA-Ho-zO-Z)(a-zA-Z0-0)*
+        Float Number = 0.(0-9)(0-9)|(1-9)(0-9)*.(0-9)(0-9)
+        Double Number = 0.(0-9)(0-9)(0-9)+|(1-9)(0-9)*.(0-9)(0-9)(0-9)+
+        Invalid input or Undefined = Otherwise

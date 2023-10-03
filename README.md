@@ -34,14 +34,14 @@ CSE 3142 (Compiler Design Lab)
         Float Number = 0.(0-9)(0-9)|(1-9)(0-9)*.(0-9)(0-9)
         Double Number = 0.(0-9)(0-9)(0-9)+|(1-9)(0-9)*.(0-9)(0-9)(0-9)+
         Invalid input or Undefined = Otherwise
-# Problem 06 [code](#)
+# Problem 06 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_06.cpp)
     Problem description:
     Build a lexical analyzer implementing the following regular expressions:
 	Character variable =ch_(a-zA-Z0-9)(a-zA-Z0-9)*
 	Binary variable = bn_(a-zA-Z0-9)(a-zA-Z0-9)*
 	Binary Number =0(0|1)(0|1)*
 	Invalid Input or Undefined = Otherwise
- # Problem 07 [code](#)
+ # Problem 07 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_07.cpp)
     Problem description:
     Write a program to recognize C++
 	i) Keyword ii) Identifier iii) Operator iv) Constant

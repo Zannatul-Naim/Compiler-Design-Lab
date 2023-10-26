@@ -59,3 +59,13 @@ CSE 3142 (Compiler Design Lab)
 			Output: Identifier
 			Input: +
 			Output: Arithmetic Operator
+   # Problem 09 [code](#)
+ 	   Problem description:
+			Write a program that will check an English sentence given in the present indefinite form to justify whether it is syntactically valid or invalid according to the following Chomsky Normal Form:
+				S → SUB PRED
+				SUB → PN|P
+				PRED → VIV N
+				PN → Sagor | Selim | Salma | Nipu
+				P → he| she |1/ we | you | they
+				N → book | cow | dog | home | grass |rice |mango
+				V → read | eat | take | run | write

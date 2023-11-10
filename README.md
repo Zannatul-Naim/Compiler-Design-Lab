@@ -59,7 +59,7 @@ CSE 3142 (Compiler Design Lab)
 			Output: Identifier
 			Input: +
 			Output: Arithmetic Operator
-# Problem 09 [code](#)
+# Problem 09 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_09.cpp)
  	   Problem description:
 			Write a program that will check an English sentence given in the present indefinite form to justify
    			whether it is syntactically valid or invalid according to the following Chomsky Normal Form:

@@ -41,11 +41,11 @@ CSE 3142 (Compiler Design Lab)
 			Binary variable = bn_(a-zA-Z0-9)(a-zA-Z0-9)*
 			Binary Number =0(0|1)(0|1)*
 			Invalid Input or Undefined = Otherwise
- # Problem 07 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_07.cpp)
+# Problem 07 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_07.cpp)
     Problem description:
 	    Write a program to recognize C++
 			i) Keyword ii) Identifier iii) Operator iv) Constant
- # Problem 08 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_08.cpp)
+# Problem 08 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_08.cpp)
     Problem description:
 		Write a program which converts a word of C++ program to its equivalent token.
 			RESULT:
@@ -59,9 +59,10 @@ CSE 3142 (Compiler Design Lab)
 			Output: Identifier
 			Input: +
 			Output: Arithmetic Operator
-   # Problem 09 [code](#)
+# Problem 09 [code](#)
  	   Problem description:
-			Write a program that will check an English sentence given in the present indefinite form to justify whether it is syntactically valid or invalid according to the following Chomsky Normal Form:
+			Write a program that will check an English sentence given in the present indefinite form to justify
+   			whether it is syntactically valid or invalid according to the following Chomsky Normal Form:
 				S → SUB PRED
 				SUB → PN|P
 				PRED → VIV N
@@ -69,3 +70,11 @@ CSE 3142 (Compiler Design Lab)
 				P → he| she |1/ we | you | they
 				N → book | cow | dog | home | grass |rice |mango
 				V → read | eat | take | run | write
+# Problem 10 [code]()
+	Problem description:
+ 		Write a program to implement a shift-reducing parsing.
+
+# Problem 11 [code](#)
+	Problem description:
+ 		Write a program to generate a syntax tree for the sentence a+b*c with the following grammar:
+			E → E+E | E-E | E*E | E/E | (E) | a | b | c

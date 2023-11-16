@@ -78,3 +78,11 @@ CSE 3142 (Compiler Design Lab)
 	Problem description:
  		Write a program to generate a syntax tree for the sentence a+b*c with the following grammar:
 			E → E+E | E-E | E*E | E/E | (E) | a | b | c
+# Problem 16 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_16.cpp)
+	Problem description:
+ 		Write a program that converts the C++ expression to an intermediate code of Post-fix notation form.
+   			RESULT:
+	  			Input:
+	  				Enter infix expression: (A-B)*(D/E)
+	   			Output:
+	   				Postfix: AB-DE/*

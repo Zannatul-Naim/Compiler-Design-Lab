@@ -61,15 +61,15 @@ CSE 3142 (Compiler Design Lab)
 			Output: Arithmetic Operator
 # Problem 09 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_09.cpp)
  	   Problem description:
-			Write a program that will check an English sentence given in the present indefinite form to justify
-   			whether it is syntactically valid or invalid according to the following Chomsky Normal Form:
-				S → SUB PRED
-				SUB → PN|P
-				PRED → VIV N
-				PN → Sagor | Selim | Salma | Nipu
-				P → he| she |1/ we | you | they
-				N → book | cow | dog | home | grass |rice |mango
-				V → read | eat | take | run | write
+		Write a program that will check an English sentence given in the present indefinite form to justify
+		whether it is syntactically valid or invalid according to the following Chomsky Normal Form:
+			S → SUB PRED
+			SUB → PN|P
+			PRED → VIV N
+			PN → Sagor | Selim | Salma | Nipu
+			P → he| she |1/ we | you | they
+			N → book | cow | dog | home | grass |rice |mango
+			V → read | eat | take | run | write
 # Problem 10 [code]()
 	Problem description:
  		Write a program to implement a shift-reducing parsing.
@@ -81,8 +81,8 @@ CSE 3142 (Compiler Design Lab)
 # Problem 16 [code](https://github.com/Zannatul-Naim/Compiler-Design-Lab/blob/main/problem_16.cpp)
 	Problem description:
  		Write a program that converts the C++ expression to an intermediate code of Post-fix notation form.
-   			RESULT:
-	  			Input:
-	  				Enter infix expression: (A-B)*(D/E)
-	   			Output:
-	   				Postfix: AB-DE/*
+		RESULT:
+			Input:
+				Enter infix expression: (A-B)*(D/E)
+			Output:
+				Postfix: AB-DE/*

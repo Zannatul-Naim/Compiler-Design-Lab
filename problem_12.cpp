@@ -6,16 +6,6 @@ bool isOperator(char c) {
     return (c == '+' || c == '-' || c == '*' || c == '/');
 }
 
-bool isIdentifierOrInteger(const string& str) {
-    if (str.empty()) return false;
-    if(isdigit(str[0])) return false;
-    if (!isalpha(str[0]) and str[0] != '_') return false;
-    for (char c : str) {
-        if (!isalnum(c) and c != '_') return false;
-    }
-    return true;
-}
-
 bool isIdentifier(string s) {
    
    if(!isalpha(s[0]) and s[0] != '_' ) return false;

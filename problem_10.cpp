@@ -17,20 +17,8 @@ int main() {
         string temp;
         cout << "Enter Production Rule " << i+1 <<": ";
         getline(cin, temp);
-
-        bool left = true;
-        for(int j = 0; j < temp.size(); j++) {
-            if(temp[j] == ' ') continue;
-            else if(temp[j] == '=') {
-                left = false;
-            } else {
-                if(left) {
-                    g_left[i].push_back(temp[j]);
-                } else {
-                    g_right[i].push_back(temp[j]);
-                }
-            }
-        }
+        g_left[i].push_back(temp[0]);
+        for(int j = 3; j < temp.size(); j++) g_right[i].push_back(temp[j]);
     }
 
     cout << "\n\nGiven Grammar is:\n";
@@ -45,7 +33,7 @@ int main() {
     string stk = "$";
     input.push_back('$');
 
-    printf("\nStack \t Input \t Actions\n");
+    printf("\nStack \t Input \t\t Actions\n");
 
     while(input != "$") {
         stk.push_back(input[0]);
@@ -58,7 +46,6 @@ int main() {
             if(stk.find(g_right[i]) < stk.length()) {
                 stk.erase(stk.find(g_right[i]), stk.length());
                 stk += g_left[i];
-
                 reduce_to(stk, input, g_left[i][0], g_right[i][0]);
                 reduce = true; 
             }
@@ -75,9 +62,9 @@ int main() {
 }
 
 void shift(string stk, string input) {
-    cout << stk << "\t" << input << "\t" << "SHIFT" << endl;
+    cout << stk << "\t\t" << input << "\t\t" << "SHIFT" << endl;
 }
 
 void reduce_to(string stk, string input, char a, char b) {
-    cout << stk << "\t" << input << "\t" << "Reduce to " << a << "->" << b << endl;
+    cout << stk << "\t\t" << input << "\t\t" << "Reduce to " << a << "->" << b << endl;
 }

@@ -13,7 +13,7 @@ string solve(string infix);
 
 int main() {
     // string infix = "if a then if b then c else if d then e else f else if g then h else i ";
-    freopen("17.input.txt", "r", stdin);
+    freopen("17.txt", "r", stdin);
     string infix;
     getline(cin, infix);
     cout<<solve(infix);

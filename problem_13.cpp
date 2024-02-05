@@ -11,7 +11,7 @@ map<char, set<char>> follow;
 vector<char> order; // order of the grammar
 
 int main() {
-    freopen("13.input.txt", "r", stdin);
+    freopen("13.txt", "r", stdin);
     string production;
     while (getline(cin, production))
     {

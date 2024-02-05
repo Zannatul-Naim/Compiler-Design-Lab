@@ -29,28 +29,17 @@ int main() {
         int cnt = 0;
 
         if(words.size() > 3 or words.size() < 2) {
-            cout << sentence << ": Invalid Input" << endl;
+            cout << sentence << " : Invalid Input" << endl;
             break;
         }
         bool isValid = true;
-        for(string word : words) {
-            cnt++;
-            if(cnt == 1 and !pn.count(word) and !p.count(word)) {
-                isValid = false;
-                break;
-            } else if(cnt == 2 and !v.count(word)) {
-                isValid = false;
-                break;
-            } else if(cnt == 3 and !n.count(word)) {
-                isValid = false;
-            }
-        }
+        if(!pn.count(words[0]) and !p.count(words[0])) isValid = false;
+        if(!v.count(words[1])) isValid = false;
+        if(words.size() > 2 and !n.count(words[2])) isValid = false;
         
-        if(isValid) cout << sentence << ": Syntactically Valid" << endl;
-        else cout << sentence << ": Syntactically Invalid!" << endl;
-
+        if(isValid) cout << sentence << ": Valid" << endl;
+        else cout << sentence << ": Invalid!" << endl;
+        words.clear();
     }
-
     return 0;
-
 }

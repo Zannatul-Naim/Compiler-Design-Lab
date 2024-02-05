@@ -24,6 +24,7 @@ int isFloatOrDouble(string s) {
     }
     if(cnt > 1 or cnt == 0) return false;
     cnt = 0;
+    if(s[0] == '0' and s[1] != '.') return false;
     for(int i = n-1; i >= 0; i--) {
         if(s[i] == '.') {
             break;

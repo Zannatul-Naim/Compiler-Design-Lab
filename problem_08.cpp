@@ -11,40 +11,34 @@ vector<string> keywords = {
     "delete", "nullptr"
 };
 
-string arithmetic_operators[] = { "+", "-", "*", "/", "%" };
-string relational_operators[] = { "==", "!=", "<", ">", "<=", ">=" };
-string logical_operators[] = { "&&", "||", "!" };
-string bitwise_operators[] = { "&", "|", "^", "~", "<<", ">>" };
-string assignment_operators[] = { "=", "+=", "-=", "*=", "/=", "%=", "&=", "|=", "^=", "<<=", ">>=" };
-string increment_decrement_operators[] = { "++", "--" };
+vector<string> arithmetic_operators = { "+", "-", "*", "/", "%" };
+vector<string> relational_operators = { "==", "!=", "<", ">", "<=", ">=" };
+vector<string> logical_operators = { "&&", "||", "!" };
+vector<string> bitwise_operators = { "&", "|", "^", "~", "<<", ">>" };
+vector<string> assignment_operators = { "=", "+=", "-=", "*=", "/=", "%=", "&=", "|=", "^=", "<<=", ">>=" };
+vector<string> increment_decrement_operators = { "++", "--" };
 
 int main() {
 
     cout << endl << endl;
 
-    freopen("input.txt", "r", stdin);
+    freopen("8.txt", "r", stdin);
     string str;
 
     while (getline(cin, str)) {
-        if (find(begin(keywords), end(keywords), str) != end(keywords)) {
+        if (find(keywords.begin(), keywords.end(), str) != end(keywords)) {
             cout << str << " : " << "Keyword "<< endl;;
-        }
-        else if (find(begin(arithmetic_operators), end(arithmetic_operators), str) != end(arithmetic_operators)) {
+        } else if (find(arithmetic_operators.begin(), arithmetic_operators.end(), str) != arithmetic_operators.end()) {
             cout << str << " : " << "Arithmetic Operator" << endl;
-        }
-        else if (find(begin(relational_operators), end(relational_operators), str) != end(relational_operators)) {
+        } else if (find(relational_operators.begin(), relational_operators.end(), str) != relational_operators.end()) {
             cout << str << " : " << "Relational Operator" << endl;
-        }
-        else if (find(begin(logical_operators), end(logical_operators), str) != end(logical_operators)) {
+        } else if (find(logical_operators.begin(), logical_operators.end(), str) != logical_operators.end()) {
             cout << str << " : " << "Logical Operator "<< endl;;
-        }
-        else if (find(begin(assignment_operators), end(assignment_operators), str) != end(assignment_operators)) {
+        } else if (find(assignment_operators.begin(), assignment_operators.end(), str) != assignment_operators.end()) {
             cout << str << " : " << "Assignment Operator "<< endl;;
-        }
-        else if (find(begin(increment_decrement_operators), end(increment_decrement_operators), str) != end(increment_decrement_operators)) {
+        } else if (find(increment_decrement_operators.begin(), increment_decrement_operators.end(), str) != increment_decrement_operators.end()) {
             cout << str << " : " << "Increment or Decrement Operator "<< endl;;
-        }
-        else if (str[0] == '_' || isalpha(str[0])) {
+        } else if (str[0] == '_' or isalpha(str[0])) {
             bool flag = true;
             for (int i = 1; i < str.length(); i++) {
                 if (!isalnum(str[i]) && str[i] != '_') {
@@ -54,16 +48,12 @@ int main() {
             }
             if (flag) {
                 cout << str << " : " << "Identifier "<< endl;;
-            }
-            else {
+            } else {
                 cout << str << " : " << "Invalid Lexeme "<< endl;;
             }
-        }
-        else if (str[0] == '"' and str[str.length() - 1] == '"') {
+        } else if (str[0] == '"' and str[str.length() - 1] == '"') {
             cout << str << " : " << "String Literal "<< endl;;
-        }
-        else if (str[0] == '.' or isdigit(str[0])) {
-            
+        } else if (str[0] == '.' or isdigit(str[0])) {
             bool flag = true;
             int decimal = 0;
             for (char c : str) {
@@ -71,33 +61,20 @@ int main() {
                     flag = false;
                 }
                 if (c == '.') {
-                     decimal++;
+                    decimal++;
                 }
             }
-            if (flag && decimal == 0) {
+            if (flag and decimal == 0) {
                 cout << str << " : " << "Integer "<< endl;;
-            }
-            else if (flag && decimal == 1) {
+            } else if (flag && decimal == 1) {
                 cout << str << " : " << "Float "<< endl;;
-            }
-            else {
+            } else {
                 cout << str << " : " << "Invalid Lexeme "<< endl;;
             }
-        }
-        else {
+        } else {
             cout << str << " : " << "Invalid Lexeme "<< endl;;
         }
     }
     cout << endl << endl;
     return 0;
 }
-
-
-/*
-input.txt
-646.45
-do
-554
-abc
-+
-*/

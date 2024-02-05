@@ -1,0 +1,16 @@
+int
+while
+white
+if
+id
+_x
+8.7
+94
+"c++"
+5j
+=
++
+>=
+main
+2.6.7
+5.

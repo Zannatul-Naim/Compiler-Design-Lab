@@ -1,0 +1,10 @@
+ch_ar
+ch_*
+_chd
+bn_b
+bn_/
+bn_ffs4
+0
+01
+0000
+1010
